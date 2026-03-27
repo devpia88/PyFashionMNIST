@@ -4,7 +4,7 @@ import torch
 from torch import nn
 import torchvision.transforms as transforms
 import os, json
-
+ 
 class MyCNNModel(nn.Module):
 
     def __init__(self):
