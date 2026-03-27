@@ -132,4 +132,6 @@ img_file = st.file_uploader("이미지를 업로드 하세요." ,type=['png', 'j
 if img_file:
   save_uploaded_file('images', img_file)
   st.image(f"images/{img_file.name}") 
- 
+
+  _, pred_class = predict(os.path.jpin('images', img_file.name), model, transform)
+  st.subheader(pred_class)
