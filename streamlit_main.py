@@ -133,5 +133,5 @@ if img_file:
   save_uploaded_file('images', img_file)
   st.image(f"images/{img_file.name}") 
 
-  _, pred_class = predict(os.path.jpin('images', img_file.name), model, transform)
+  _, pred_class = predict(os.path.join('images', img_file.name), model, transform)
   st.subheader(pred_class)
