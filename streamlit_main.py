@@ -119,5 +119,5 @@ transform = transforms.Compose([
 
 st.title("FashionMNIST")
 
-st.file_uploader("이미지를 업로드 하세요." ,type=['png', 'jpg', 'jpeg' ]
+st.file_uploader("이미지를 업로드 하세요." ,type=['png', 'jpg', 'jpeg' ])
 
